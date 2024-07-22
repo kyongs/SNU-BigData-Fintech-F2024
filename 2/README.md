@@ -1,6 +1,8 @@
 ### 2일차 실습
 
 2일차 실습에서는 basic sql 실습과 nl2sql 실습을 진행합니다. 파일은 각각 [Basic_SQL.pdf](./Basic_SQL.pdf), [NL2SQL.pdf](./NL2SQL.pdf) 참고하시면 됩니다.
+<br/>
+교수님 Oracle 수업자료를 LiveSQL에서 실행시킬 수 있도록 보충자료를 제공해드립니다. ([2.1 Relational Algebra (LiveSQL)](<./2/2.1 relational algebra.md>) , [2.2 Basic SQL (LiveSQL)](<./2/2.1 relational algebra.md>) ) 해당 자료들 또한, [scott.sql](../1/scott.sql) 파일이 실행된 상태라고 가정합니다.
 
 **1. Basic SQL**
 
@@ -10,4 +12,4 @@
 
 **2. NL2SQL**
 
-- ChatGPT로 NL2SQL 하는 법을 실습합니다.
+- ChatGPT를 활용하여 NL2SQL 실습을 진행합니다.
