@@ -33,8 +33,8 @@
   | [NL2SQL 실습](./2/NL2SQL.pdf)                             | 실습                               |
   | [dept.csv](./2/dept.csv)                                  | 실습 보충자료 (import 안될때 사용) |
   | [emp.csv](./2/emp.csv)                                    | 실습 보충자료 (import 안될때 사용) |
-  | [2.1 Relational Algebra](<./2/2.1 relational algebra.md>) | 수업 보충자료                      |
-  | [2.2 Basic SQL](<./2/2.1 relational algebra.md>)          | 수업 보충자료                      |
+  | [2.1 Relational Algebra (LiveSQL)](<./2/2.1 relational algebra.md>) | 수업 보충자료                      |
+  | [2.2 Basic SQL (LiveSQL)](<./2/2.1 relational algebra.md>)          | 수업 보충자료                      |
 
 <br/>
 
