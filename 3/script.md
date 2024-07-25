@@ -1,4 +1,5 @@
-postgres scott script
+### postgres scott script
+
 ```sql
 create table dept(
   deptno   decimal(2,0) not null,
@@ -11,14 +12,14 @@ create table emp(
   mgr      decimal(4,0),
   hiredate date,
   sal      decimal(7,2),
-  comm     decimal(7,2),  
+  comm     decimal(7,2),
   deptno   decimal(2,0) not null);
 
 
 insert into DEPT values (10, 'ACCOUNTING', 'NEW YORK');
-insert into DEPT values (20, 'RESEARCH', 'DALLAS'); 
-insert into DEPT values (30, 'SALES', 'CHICAGO'); 
-insert into DEPT values (40, 'OPERATIONS', 'BOSTON'); 
+insert into DEPT values (20, 'RESEARCH', 'DALLAS');
+insert into DEPT values (30, 'SALES', 'CHICAGO');
+insert into DEPT values (40, 'OPERATIONS', 'BOSTON');
 
 insert into emp values (7839, 'KING',   'PRESIDENT', cast(null as integer), to_date('17-11-1981','dd-mm-yyyy'), 5000, cast(null as integer), 10);
 insert into emp  values (7698, 'BLAKE',  'MANAGER',   7839, to_date('1-5-1981','dd-mm-yyyy'),      2850, cast(null as integer), 30);
@@ -34,4 +35,46 @@ insert into emp  values (7844, 'TURNER', 'SALESMAN',  7698, to_date('8-9-1981','
 insert into emp  values (7876, 'ADAMS',  'CLERK',     7788, to_date('13-7-87', 'dd-mm-rr') - 51, 1100, cast(null as integer), 20 );
 insert into emp  values (7900, 'JAMES',  'CLERK',     7698, to_date('3-12-1981','dd-mm-yyyy'),      950, cast(null as integer), 30 );
 insert into emp  values (7934, 'MILLER', 'CLERK',     7782, to_date('23-1-1982','dd-mm-yyyy'),     1300, cast(null as integer), 10);
+```
+
+### CUBE, ROLLUP 예제
+
+```sql
+CREATE TABLE sales (
+    sale_date DATE,
+    category TEXT,
+    region TEXT,
+    amount NUMERIC
+);
+
+INSERT INTO sales (sale_date, category, region, amount) VALUES
+('2024-01-01', 'Electronics', 'North', 1500),
+('2024-01-01', 'Electronics', 'South', 1200),
+('2024-01-01', 'Clothing', 'North', 800),
+('2024-01-01', 'Clothing', 'South', 600),
+('2024-02-01', 'Electronics', 'North', 1600),
+('2024-02-01', 'Clothing', 'South', 700),
+('2024-02-01', 'Electronics', 'South', 1300);
+```
+
+```sql
+--- CUBE
+SELECT
+    sale_date,
+    category,
+    region,
+    SUM(amount) AS total_amount
+FROM sales
+GROUP BY CUBE (sale_date, category, region);
+```
+
+```sql
+--- ROLLUP
+SELECT
+    sale_date,
+    category,
+    region,
+    SUM(amount) AS total_amount
+FROM sales
+GROUP BY ROLLUP (sale_date, category, region);
 ```

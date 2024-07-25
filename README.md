@@ -43,32 +43,32 @@
 - [3차시 실습 설명](./3/README.md)
 - 실습 파일
 
-  | Link                                                                                                                                      | Desc |
-  |-------------------------------------------------------------------------------------------------------------------------------------------| ---- |
-  | [](<>)                                                                                          | 실습 |
-  | [Postgres Scott Script](<./3/postgres_scott.md>)                                                                                          | 실습 |
-  | [3.1 (Advanced SQL) Cube](<./3/3.1 (Advanced SQL) Cube.md>)                                                                               | 수업 보충자료|
-  | [3.3 (Advanced SQL) With Recursive Subquery Factoring in Oracle](<./3/3.3 (Advanced SQL) With Recursive Subquery Factoring in Oracle.md>) | 수업 보충자료     |
-  | [3.4 (IO) Physical storage of relations and access methods](<./3/3.4 (IO) Physical storage of relations and access methods.md>)           | 수업 보충자료     |
+  | Link                                                                                                                                      | Desc          |
+  | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+  | []()                                                                                                                                      | 실습          |
+  | [Postgres Scott Script](./3/scriptx.md)                                                                                                   | 실습          |
+  | [3.1 (Advanced SQL) Cube](<./3/3.1 (Advanced SQL) Cube.md>)                                                                               | 수업 보충자료 |
+  | [3.3 (Advanced SQL) With Recursive Subquery Factoring in Oracle](<./3/3.3 (Advanced SQL) With Recursive Subquery Factoring in Oracle.md>) | 수업 보충자료 |
+  | [3.4 (IO) Physical storage of relations and access methods](<./3/3.4 (IO) Physical storage of relations and access methods.md>)           | 수업 보충자료 |
 
 #### 4차시 (2024.7.26 (금))
 
-- [4차시 실습 설명]((./4/README.md))
+- [4차시 실습 설명](<(./4/README.md)>)
 - 실습 파일
 
-  | Link                                                                     | Desc    |
-  |--------------------------------------------------------------------------|---------|
-  | RAG + VectorDB                                                           | 실습      |
+  | Link                                                                                  | Desc          |
+  | ------------------------------------------------------------------------------------- | ------------- |
+  | RAG + VectorDB                                                                        | 실습          |
   | [4.2 b-tree index vs. full table scan](<./4/4.2 b-tree index vs. full table scan.md>) | 수업 보충자료 |
 
 #### 5차시 (2024.7.29 (월))
 
 - 5차시 실습 설명
 - 실습 파일
-  
-   | Link | Desc |
-    | ----------------- | ---- |
-    | Concurrency Control | 실습 |
+
+  | Link                | Desc |
+  | ------------------- | ---- |
+  | Concurrency Control | 실습 |
 
 #### 간단한 프로젝트
 
