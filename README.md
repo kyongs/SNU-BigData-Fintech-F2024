@@ -45,9 +45,9 @@
 
   | Link                                                                                                                                      | Desc |
   |-------------------------------------------------------------------------------------------------------------------------------------------| ---- |
+  | [](<>)                                                                                          | 실습 |
   | [Postgres Scott Script](<./3/postgres_scott.md>)                                                                                          | 실습 |
-- | [Postgres Scott Script](<./3/postgres_scott.md>)                                                                                          | 실습 |
-  | [3.1 (Advanced SQL) Cube](<./3/3.1 (Advanced SQL) Cube.md>)                                                                               | 수업 보충자료 |
+  | [3.1 (Advanced SQL) Cube](<./3/3.1 (Advanced SQL) Cube.md>)                                                                               | 수업 보충자료|
   | [3.3 (Advanced SQL) With Recursive Subquery Factoring in Oracle](<./3/3.3 (Advanced SQL) With Recursive Subquery Factoring in Oracle.md>) | 수업 보충자료     |
   | [3.4 (IO) Physical storage of relations and access methods](<./3/3.4 (IO) Physical storage of relations and access methods.md>)           | 수업 보충자료     |
 
