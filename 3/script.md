@@ -66,6 +66,14 @@ SELECT
     SUM(amount) AS total_amount
 FROM sales
 GROUP BY CUBE (sale_date, category, region);
+
+--- CUBE
+SELECT
+    sale_date,
+    category,
+    SUM(amount) AS total_amount
+FROM sales
+GROUP BY CUBE (sale_date, category);
 ```
 
 ```sql
@@ -77,4 +85,12 @@ SELECT
     SUM(amount) AS total_amount
 FROM sales
 GROUP BY ROLLUP (sale_date, category, region);
+
+--- ROLLUP
+SELECT
+    sale_date,
+    category,
+    SUM(amount) AS total_amount
+FROM sales
+GROUP BY ROLLUP (sale_date, category);
 ```
