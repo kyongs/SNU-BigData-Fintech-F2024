@@ -94,3 +94,55 @@ SELECT
 FROM sales
 GROUP BY ROLLUP (sale_date, category);
 ```
+
+### 계층 구조를 postgres에서 실행하는 방법
+
+기존 Oracle 코드
+
+```sql
+SELECT LPAD(' ', 3*LEVEL-3) || ename as org_chart, level, empno, mgr, deptno
+	from emp
+start with mgr is null
+connect by prior empno = mgr;
+```
+
+postgres 코드
+
+```sql
+
+--postgres
+WITH RECURSIVE EmployeeHierarchy AS (
+    -- 기본 쿼리: 최고 관리자 (상사가 없는 직원)
+    SELECT
+        empno,
+        ename,
+        mgr,
+        deptno,
+        1 AS level,
+        LPAD(' ', 0) AS org_chart
+    FROM emp
+    WHERE mgr IS NULL
+
+    UNION ALL
+
+    -- 재귀 쿼리: 부하 직원
+    SELECT
+        e.empno,
+        e.ename,
+        e.mgr,
+        e.deptno,
+        eh.level + 1,
+        LPAD(' ', (eh.level * 3) - 3) || e.ename
+    FROM emp e
+    JOIN EmployeeHierarchy eh ON e.mgr = eh.empno
+)
+SELECT
+    org_chart,
+    level,
+    empno,
+    mgr,
+    deptno
+FROM EmployeeHierarchy
+ORDER BY level, empno;
+
+```
