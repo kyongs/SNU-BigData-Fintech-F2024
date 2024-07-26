@@ -58,11 +58,12 @@
 
   | Link                                                                                  | Desc          |
   | ------------------------------------------------------------------------------------- | ------------- |
-  | [VectorDB](./4/VectorDB_RAG.pdf)                                | 실습          |
-  | [ChromaDB 기초 실습](./4/chromadb_getting_started.ipynb)                                | 실습          |
+  | [VectorDB](./4/VectorDB_RAG.pdf)                                                      | 실습          |
+  | [ChromaDB 기초 실습](./4/chromadb_getting_started.ipynb)                              | 실습          |
   | [ChromaDB RAG](./4/chromadb_RAG.ipynb)                                                | 실습          |
   | [4.2 b-tree index vs. full table scan](<./4/4.2 b-tree index vs. full table scan.md>) | 수업 보충자료 |
   | [Postgres Python Script](./4/python_pg/0_template.py)                                 | 실습 보충자료 |
+  | [RAG Example 2](./4/RAG_example/exercise.ipynb)                                       | 실습 보충자료 |
 
 #### 5차시 (2024.7.29 (월))
 
