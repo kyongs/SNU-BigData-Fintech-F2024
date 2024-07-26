@@ -58,6 +58,7 @@
 
   | Link                                                                                  | Desc          |
   | ------------------------------------------------------------------------------------- | ------------- |
+  | [VectorDB](./4/VectorDB_RAG.pdf)                                | 실습          |
   | [ChromaDB 기초 실습](./4/chromadb_getting_started.ipynb)                                | 실습          |
   | [ChromaDB RAG](./4/chromadb_RAG.ipynb)                                                | 실습          |
   | [4.2 b-tree index vs. full table scan](<./4/4.2 b-tree index vs. full table scan.md>) | 수업 보충자료 |
