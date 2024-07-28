@@ -70,9 +70,10 @@
 - 5차시 실습 설명
 - 실습 파일
 
-  | Link                | Desc |
-  | ------------------- | ---- |
-  | Concurrency Control | 실습 |
+  | Link                                                    | Desc          |
+  | ------------------------------------------------------- | ------------- |
+  | Concurrency Control                                     | 실습          |
+  | [5.1 query processing](./5/5.1%20query%20processing.md) | 수업 보충자료 |
 
 #### 간단한 프로젝트
 
