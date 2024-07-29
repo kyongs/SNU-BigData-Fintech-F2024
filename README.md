@@ -62,19 +62,22 @@
   | [ChromaDB 기초 실습](./4/chromadb_getting_started.ipynb)                              | 실습          |
   | [ChromaDB RAG](./4/chromadb_RAG.ipynb)                                                | 실습          |
   | [4.2 b-tree index vs. full table scan](<./4/4.2 b-tree index vs. full table scan.md>) | 수업 보충자료 |
-  | [Postgres Python Script](./4/python_pg/0_template.py)                                 | 실습 보충자료 |
-  | [RAG Example 2](./4/RAG_example/exercise.ipynb)                                       | 실습 보충자료 |
+
+  | [RAG Example 2](./4/RAG_example/exercise.ipynb) | 실습 보충자료 |
 
 #### 5차시 (2024.7.29 (월))
 
-- 5차시 실습 설명
+- [5차시 실습 설명]()
 - 실습 파일
 
-  | Link                                                    | Desc          |
-  | ------------------------------------------------------- | ------------- |
-  | Concurrency Control                                     | 실습          |
-  | [5.1 query processing](./5/5.1%20query%20processing.md) | 수업 보충자료 |
+  | Link                                                            | Desc          |
+  | --------------------------------------------------------------- | ------------- |
+  | [Concurrency Control](./5/Concurrency%20Control%20Practice.pdf) | 실습          |
+  | [Concurrency Control script](./5/cc.md)                         | 실습 보충자료 |
+  | [5.1 query processing](./5/5.1%20query%20processing.md)         | 수업 보충자료 |
 
 #### 간단한 프로젝트
-
-- TBA
+- 
+  | Link                                                  | Desc          |
+  | ----------------------------------------------------- | ------------- |
+  | [Postgres Python Script](./4/python_pg/0_template.py) | |
